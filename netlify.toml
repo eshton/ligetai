@@ -1,0 +1,15 @@
+[build]
+  publish = "public"
+  command = "hugo --gc --minify"
+
+[build.environment]
+  HUGO_VERSION = "0.152.2"
+  HUGO_ENV = "production"
+  TZ = "Europe/Budapest"
+
+# Use the deploy URL as baseURL for branch/preview deploys so links resolve correctly
+[context.deploy-preview]
+  command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
+
+[context.branch-deploy]
+  command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"

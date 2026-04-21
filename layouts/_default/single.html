@@ -1,0 +1,77 @@
+{{ define "body_classes" }}page-default-single{{ end }}
+
+{{ define "header_css" }}
+<style>
+  .page-banner {
+    width: 100%;
+    height: clamp(220px, 32vw, 380px);
+    overflow: hidden;
+    position: relative;
+  }
+  .page-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    display: block;
+  }
+  .page-banner::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(31,42,31,0) 60%, rgba(31,42,31,0.18) 100%);
+    pointer-events: none;
+  }
+
+  .page-content { padding: 3.5rem 0 5rem; }
+  .page-content .title {
+    margin-bottom: 1.5rem;
+  }
+  .page-content .content {
+    font-size: 1.05rem;
+    line-height: 1.75;
+  }
+</style>
+{{ end }}
+
+{{ define "main" }}
+{{ with .Params.header_image }}
+<header class="page-banner">
+  <img src="{{ . | relURL }}" alt="{{ $.Params.header_image_alt | default "" }}" loading="eager" fetchpriority="high">
+</header>
+{{ end }}
+
+{{ if .Params.header_image }}
+<div class="page-content">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="title">{{ .Title }}</h1>
+        <div class="content">{{ .Content }}</div>
+      </div>
+    </div>
+  </div>
+</div>
+{{ else if .Params.intro_image }}
+<div class="intro">
+  <div class="container">
+    <div class="row justify-content-start">
+      <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1">
+        <h1 class="title">{{ .Title }}</h1>
+        <div class="content">{{ .Content }}</div>
+      </div>
+      {{ partial "intro-image.html" . }}
+    </div>
+  </div>
+</div>
+{{ else }}
+<div class="container pb-6 pt-6 pt-md-14 pb-md-14">
+  <div class="row justify-content-start">
+    <div class="col-12 col-md-8">
+      <h1 class="title">{{ .Title }}</h1>
+      <div class="content">{{ .Content }}</div>
+    </div>
+  </div>
+</div>
+{{ end }}
+{{ end }}

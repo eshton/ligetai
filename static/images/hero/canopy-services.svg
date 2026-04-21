@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" role="img" aria-label="Three overlapping canopies">
+  <rect width="480" height="480" fill="#F4F6F1" rx="8"/>
+
+  <!-- three overlapping canopies representing the three services -->
+  <g>
+    <ellipse cx="170" cy="210" rx="110" ry="118" fill="#3F5A40" opacity="0.85"/>
+    <ellipse cx="310" cy="190" rx="110" ry="120" fill="#547558" opacity="0.85"/>
+    <ellipse cx="240" cy="300" rx="120" ry="110" fill="#4A6650" opacity="0.88"/>
+  </g>
+
+  <!-- highlight curves suggesting light -->
+  <path d="M90 180 Q150 140 240 140" stroke="#6A8D73" stroke-width="2" fill="none" opacity="0.45"/>
+  <path d="M250 120 Q330 110 400 150" stroke="#6A8D73" stroke-width="2" fill="none" opacity="0.45"/>
+
+  <!-- three small dots signifying roots/foundation -->
+  <g fill="#2F4A30">
+    <circle cx="130" cy="420" r="5"/>
+    <circle cx="240" cy="432" r="6"/>
+    <circle cx="350" cy="420" r="5"/>
+  </g>
+
+  <!-- subtle ground -->
+  <line x1="40" y1="438" x2="440" y2="438" stroke="#2F4A30" stroke-width="1" opacity="0.3"/>
+</svg>

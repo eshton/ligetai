@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" role="img" aria-label="Liget — a stylised grove">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F4F6F1"/>
+      <stop offset="100%" stop-color="#E7EDE0"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="500" fill="url(#sky)" rx="8"/>
+
+  <!-- distant hills -->
+  <path d="M0 360 Q150 330 300 350 T600 340 V500 H0 Z" fill="#C9D6C1" opacity="0.7"/>
+  <path d="M0 400 Q200 380 400 395 T600 390 V500 H0 Z" fill="#A3B9A3" opacity="0.55"/>
+
+  <!-- back row (muted, smaller) -->
+  <g fill="#6A8D73" opacity="0.85">
+    <ellipse cx="90" cy="280" rx="38" ry="52"/>
+    <rect x="86" y="310" width="8" height="60" fill="#4A6650"/>
+    <ellipse cx="150" cy="290" rx="34" ry="48"/>
+    <rect x="146" y="316" width="7" height="56" fill="#4A6650"/>
+    <ellipse cx="470" cy="275" rx="40" ry="54"/>
+    <rect x="466" y="308" width="8" height="62" fill="#4A6650"/>
+    <ellipse cx="530" cy="285" rx="35" ry="50"/>
+    <rect x="526" y="314" width="7" height="56" fill="#4A6650"/>
+  </g>
+
+  <!-- mid row -->
+  <g fill="#547558">
+    <ellipse cx="215" cy="260" rx="52" ry="72"/>
+    <rect x="210" y="310" width="10" height="80" fill="#3F5A40"/>
+    <ellipse cx="395" cy="255" rx="54" ry="74"/>
+    <rect x="390" y="308" width="10" height="82" fill="#3F5A40"/>
+  </g>
+
+  <!-- front hero tree -->
+  <g>
+    <ellipse cx="305" cy="230" rx="78" ry="108" fill="#3F5A40"/>
+    <ellipse cx="278" cy="210" rx="44" ry="58" fill="#4A6650" opacity="0.9"/>
+    <ellipse cx="330" cy="215" rx="48" ry="62" fill="#547558" opacity="0.85"/>
+    <rect x="298" y="318" width="14" height="96" fill="#2F4A30"/>
+    <path d="M305 318 Q294 340 288 370" stroke="#2F4A30" stroke-width="2" fill="none" opacity="0.6"/>
+    <path d="M305 318 Q316 340 322 370" stroke="#2F4A30" stroke-width="2" fill="none" opacity="0.6"/>
+  </g>
+
+  <!-- ground line -->
+  <line x1="0" y1="414" x2="600" y2="414" stroke="#2F4A30" stroke-width="1" opacity="0.35"/>
+
+  <!-- subtle leaves in foreground -->
+  <g fill="#3F5A40" opacity="0.5">
+    <circle cx="30" cy="430" r="3"/>
+    <circle cx="65" cy="438" r="2"/>
+    <circle cx="560" cy="432" r="3"/>
+    <circle cx="585" cy="440" r="2"/>
+  </g>
+</svg>

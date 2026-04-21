@@ -1,36 +1,29 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Hugo output
+public/
+resources/_gen/
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
+# Hugo caches
+.hugo_build.lock
 
-# testing
-/coverage
-
-# next.js
-/.next/
-/out/
-
-# production
-/build
-
-# misc
-.DS_Store
-*.pem
-
-# debug
+# Node.js
+node_modules/
+package-lock.json
 npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+yarn.lock
+pnpm-lock.yaml
 
-# local env files
-.env*.local
-.env
+# Logs
+*.log
 
-# vercel
-.vercel
+# OS-specific files
+.DS_Store
+Thumbs.db
 
-# typescript
-*.tsbuildinfo
-next-env.d.ts
+# IDEs and editors
+.vscode/
+.idea/
+*.sw?
+
+# Optional: if you use Netlify or Vercel, ignore their local folders
+.netlify/
+.vercel/

@@ -1,0 +1,104 @@
+baseURL = "https://liget.ai/"
+themesDir = "themes"
+theme = "hugo-serif-theme"
+languageCode = "en"
+title = "AI Liget"
+
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.55.0"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[params]
+  google_analytics_id = ""
+  google_tag_manager_id = ""
+  favicon = "favicon-liget.svg"
+
+  [params.homepage]
+    sticky_header = true
+    show_contact_box = true
+    show_services_button = true
+
+  [params.logo]
+    mobile = "images/logo/logo-mobile.svg"
+    mobile_height = "32px"
+    desktop = "images/logo/logo.svg"
+    desktop_height = "36px"
+    alt = "AI Liget — Where AI systems are grown."
+
+  [params.fonts]
+    google_fonts = 'https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+Pro:wght@400;600;700&display=swap'
+    heading = "Playfair Display"
+    base = "Source Sans Pro"
+
+  [params.colors]
+    primary = "#3F5A40"
+    black = "#1F2A1F"
+    white = "#ffffff"
+    white_offset = "#F4F6F1"
+    grey = "#5C5A5A"
+
+  [params.seo]
+    meta_twitter_site = ""
+    meta_twitter_creator = ""
+    meta_og_image = ""
+
+  [params.services]
+    summary_truncate = 160
+
+  [params.team]
+    summary_large_truncate = 180
+
+  [params.footer]
+    copyright_text = '© 2026 AI Liget'
+
+[menu]
+  [[menu.main]]
+    name = "Services"
+    url = "/services/"
+    weight = 1
+
+  [[menu.main]]
+    name = "Team"
+    url = "/team/"
+    weight = 2
+
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 3
+
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 4
+
+  [[menu.footer]]
+    name = "Home"
+    url = "/"
+    weight = 1
+
+  [[menu.footer]]
+    name = "Services"
+    url = "/services/"
+    weight = 2
+
+  [[menu.footer]]
+    name = "Team"
+    url = "/team/"
+    weight = 3
+
+  [[menu.footer]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 4
+
+  [[menu.footer]]
+    name = "Credits"
+    url = "/credits/"
+    weight = 5

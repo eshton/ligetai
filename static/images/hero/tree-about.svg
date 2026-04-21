@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 500" role="img" aria-label="A mature tree">
+  <rect width="480" height="500" fill="#F4F6F1" rx="8"/>
+
+  <!-- distant hills -->
+  <path d="M0 380 Q120 360 240 370 T480 365 V500 H0 Z" fill="#C9D6C1" opacity="0.6"/>
+
+  <!-- mature single tree -->
+  <g>
+    <!-- canopy layers -->
+    <ellipse cx="240" cy="200" rx="140" ry="130" fill="#3F5A40"/>
+    <ellipse cx="195" cy="175" rx="70" ry="75" fill="#4A6650" opacity="0.9"/>
+    <ellipse cx="280" cy="180" rx="78" ry="82" fill="#547558" opacity="0.85"/>
+    <ellipse cx="240" cy="150" rx="60" ry="55" fill="#6A8D73" opacity="0.7"/>
+
+    <!-- trunk -->
+    <path d="M230 318 Q228 360 222 420 L258 420 Q252 360 250 318 Z" fill="#2F4A30"/>
+
+    <!-- branches hinting through canopy -->
+    <path d="M240 318 Q220 290 180 265" stroke="#2F4A30" stroke-width="2.5" fill="none" opacity="0.5"/>
+    <path d="M240 318 Q260 290 300 270" stroke="#2F4A30" stroke-width="2.5" fill="none" opacity="0.5"/>
+    <path d="M240 318 Q240 285 240 250" stroke="#2F4A30" stroke-width="2" fill="none" opacity="0.4"/>
+
+    <!-- roots -->
+    <path d="M240 420 Q220 430 200 438" stroke="#2F4A30" stroke-width="2" fill="none" opacity="0.5"/>
+    <path d="M240 420 Q260 430 280 438" stroke="#2F4A30" stroke-width="2" fill="none" opacity="0.5"/>
+  </g>
+
+  <!-- ground -->
+  <line x1="0" y1="424" x2="480" y2="424" stroke="#2F4A30" stroke-width="1" opacity="0.35"/>
+
+  <!-- fallen leaves -->
+  <g fill="#3F5A40" opacity="0.5">
+    <circle cx="120" cy="440" r="3"/>
+    <circle cx="155" cy="448" r="2"/>
+    <circle cx="355" cy="442" r="2.5"/>
+    <circle cx="385" cy="450" r="3"/>
+  </g>
+</svg>
